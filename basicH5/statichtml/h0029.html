@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Web 存储</title>
+    <script>
+        //判断是否支持Storage
+        function clickCounter() {
+            if(typeof (Storage)!=='undefined'){
+                //localStorage 保存数据 不会因为关闭网页而删除数据 ，只有用户手动删除数据时候才被删除
+                // if(localStorage.clickcount){
+                //     localStorage.clickcount = Number(localStorage.clickcount)+1;
+                // }else{
+                //     localStorage.clickcount=1;
+                // }
+                // document.getElementById("result").innerHTML="你已经点击了按钮 "+localStorage.clickcount+" 次";
+                // localStorage.setItem("title",'world card');
+                // document.getElementById('result').innerHTML=localStorage.getItem('title');
+
+                //sessionStorage 当前网页关闭以后，数据就会被清空
+                if(sessionStorage.clickcount){
+                    sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+                }else{
+                    sessionStorage.clickcount=1;
+                }
+                document.getElementById("result").innerHTML="你已经点击了按钮 "+sessionStorage.clickcount+" 次";
+            }else{
+                document.getElementById('result').innerHTML="sorry,not web storage"
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+<div id="result"></div>
+<p><button onclick="clickCounter()" type="button">点我</button></p>
+</body>
+</html>

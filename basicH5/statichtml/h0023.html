@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地理位置</title>
+</head>
+<body>
+<p id="demo"> 点击按钮获取您当前坐标：</p>
+<button onclick="getLocation()">点我</button>
+<div id="mapholder"></div>
+<script>
+    let x = document.getElementById("demo");
+    function getLocation() {
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(showPosition,showError);
+        }else{
+            x.innerHTML = "该浏览器不支持获取地理位置";
+        }
+    }
+    function showPosition(position) {
+        x.innerHTML="纬度: " + position.coords.latitude +
+            "<br>经度: " + position.coords.longitude;
+    }
+    function showError(error) {
+        let msg = "";
+        switch (error.code) {
+            case error.PERMISSION_DENIED:
+                msg="用户拒绝绝对获取地理位置的请求。";
+                break;
+            case error.POSITION_UNAVAILABLE:
+                msg="w位置信息时不可用的";
+                break;
+            case error.TIMEOUT:
+                msg ="请求用户地理位置超时";
+                break;
+            case error.UNKNOWN_ERR:
+                msg = "未知错误";
+                break;
+        }
+        x.innerHTML = msg;
+    }
+</script>
+</body>
+</html>
