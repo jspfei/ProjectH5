@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>拖放实例</title>
+    <style type="text/css">
+        #div1,#div2 {
+            width:220px;
+            height:277px ;
+            padding:10px;
+            border:1px solid #aaaaaa;
+        }
+    </style>
+    <script>
+        function allowDrop(ev)
+        {
+            ev.preventDefault();
+        }
+
+        function drag(ev)
+        {
+            ev.dataTransfer.setData("Text",ev.target.id);
+        }
+
+        function drop(ev)
+        {
+            ev.preventDefault();
+            let data=ev.dataTransfer.getData("Text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+<body>
+<p>拖动 图片到矩形框中：</p>
+<div id="div1" ondrag="drop(event)" ondragover="allowDrop(event)">
+    <img id="drag1" src="../img/img_the_scream.jpg" draggable="true" ondragstart="drag(event)" width="220" height="277">
+</div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</body>
+</html>

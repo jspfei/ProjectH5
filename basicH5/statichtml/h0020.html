@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+</head>
+<body>
+<img id="scream" src="../img/img_the_scream.jpg" alt="the scream " width="200" height="277">
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+
+</canvas>
+<canvas id="myCanvas1" top="200" left="200" width="200" height="100" style="border:1px solid #c3c3c3;">
+
+</canvas>
+<canvas id="myCanvas2" top="200" left="200" width="200" height="100" style="border:1px solid #c3c3c3;">
+
+</canvas>
+<canvas id="myCanvas3" top="200" left="200" width="250" height="300" style="border:1px solid #c3c3c3;">
+
+</canvas>
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    //绘制图像
+    ctx.fillStyle="#ff0000";
+    ctx.fillRect(0,0,150,75);//绘制矩形
+
+    //路径
+    ctx.moveTo(0,0);//起点
+    ctx.lineTo(200,100);//终点
+    ctx.stroke();
+
+    //绘制圆形
+    ctx.beginPath();
+    ctx.arc(95,50,40,0,2*Math.PI);
+    ctx.stroke();
+
+    //文本
+    ctx.font="30px Arial";
+    ctx.fillText("World!",10,50);//实体字
+    ctx.strokeText("Hello",100,50);//空心字
+
+
+    var c = document.getElementById("myCanvas1");
+    var ctx = c.getContext("2d");
+
+    //创建渐变
+    var grd = ctx.createLinearGradient(0,0,200,0);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1,"white");
+
+    //填充渐变
+    ctx.fillStyle = grd;
+    ctx.fillRect(10,10,150,80);
+
+
+    var c = document.getElementById("myCanvas2");
+    var ctx = c.getContext("2d");
+
+    //创建渐变
+    var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1,"white");
+
+    //填充渐变
+    ctx.fillStyle = grd;
+    ctx.fillRect(10,10,150,80);
+
+
+    var c = document.getElementById("myCanvas3");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("scream");
+    img.onload = function () {
+        ctx.drawImage(img,10,10);
+    }
+
+</script>
+</body>
+</html>
