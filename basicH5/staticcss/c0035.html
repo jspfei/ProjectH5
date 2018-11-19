@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本效果</title>
+    <style>
+        h1{
+            text-shadow: 5px 5px 5px #ff0000;
+        }
+        div{
+            width:300px;
+            height:100px;
+            background-color: yellow;
+            box-shadow: 10px 10px 5px #888888;
+
+        }
+        div.sss{
+            box-shadow: 10px 10px grey;
+            margin-top: 20px;
+        }
+       .card{
+            width:250px;
+            box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            text-align: center;
+        }
+        .header{
+            background-color:#4CAF50;
+            color:white;
+            padding:10px;
+            font-size:40px;
+        }
+       .container{
+            padding:10px;
+        }
+        .test{
+            white-space: nowrap;
+            width:120px;
+            overflow: hidden;
+            border:1px solid #000000;
+            text-overflow:ellipsis;
+            margin-top: 200px;
+        }
+        p.test1
+        {
+            width:11em;
+            border:1px solid #000000;
+            word-wrap:break-word;
+        }
+    </style>
+</head>
+<body>
+<h1>Text-shadow effect!</h1>
+<div></div>
+<div class="sss">this is a div element</div>
+
+<h2>卡片</h2>
+
+<p>box-shadow 属性用来可以创建纸质样式卡片:</p>
+
+<div class="card">
+    <div class="header">
+        <h1>1</h1>
+    </div>
+    <div class="container">
+         <p>January 1,2016</p>
+    </div>
+</div>
+
+<div class="test" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+<p class="test1"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+</body>
+</html>
