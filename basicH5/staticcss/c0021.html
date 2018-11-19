@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组合选择符</title>
+    <style>
+        div p{
+            background-color:yellow;
+        }
+        div>p{
+            background-color:yellow;
+        }
+        div+p{
+            background-color:red;
+        }
+        div~p{
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+<!--后代选择器(以空格分隔)-->
+<div>
+    <p>段落 1。 在 div 中。</p>
+    <p>段落 2。 在 div 中。</p>
+</div>
+<!--子元素选择器(以大于号分隔）-->
+<div>
+   <p>段落 2。 在 div 中。</p>
+</div>
+<!--相邻兄弟选择器（以加号分隔）-->
+<p>My best friend is Mickey.</p>
+<!--普通兄弟选择器（以破折号分隔）-->
+
+<p>段落 3。不在 div 中。</p>
+<p>段落 4。不在 div 中。</p>
+</body>
+</html>
