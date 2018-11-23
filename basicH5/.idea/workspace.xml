@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bc19ec3-199d-4ab5-a538-ab89e44be2d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/staticanimation/c0011.html" afterDir="false" />
-    </list>
+    <list default="true" id="1bc19ec3-199d-4ab5-a538-ab89e44be2d4" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,7 +15,7 @@
     <session id="493434613">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="1" />
@@ -287,8 +285,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="580" />
-    <option name="y" value="220" />
+    <option name="x" value="-95" />
+    <option name="y" value="285" />
     <option name="width" value="1386" />
     <option name="height" value="554" />
   </component>
@@ -405,7 +403,7 @@
       <workItem from="1542335340396" duration="17871000" />
       <workItem from="1542591979522" duration="25080000" />
       <workItem from="1542677926738" duration="9136000" />
-      <workItem from="1542936845933" duration="21947000" />
+      <workItem from="1542936845933" duration="22040000" />
     </task>
     <task id="LOCAL-00001" summary="sss">
       <created>1542008258200</created>
@@ -418,11 +416,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96112000" />
+    <option name="totallyTimeSpent" value="96205000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="580" y="220" width="1386" height="554" extended-state="0" />
-    <editor active="true" />
+    <frame x="-95" y="285" width="1386" height="554" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24925816" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
