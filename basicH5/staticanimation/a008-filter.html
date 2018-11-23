@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>filter</title>
+    <style>
+        img{
+            -webkit-animation: mymove 7s infinite;
+            -o-animation: mymove 7s infinite;
+            animation: mymove 7s infinite;
+
+        }
+
+        @-webkit-keyframes mymove {
+            50%{
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%)
+            }
+        }
+        @keyframes mymove {
+            50% {
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%)
+            }
+        }
+    </style>
+</head>
+<body>
+
+<p>逐步改变图片的背景颜色，从黑到白 (100% 灰阶):<p>
+
+    <img src="../img/img_the_scream.jpg" alt="Pineapple" width="300" height="300">
+
+<p>filter 属性支持动画效果。</p>
+<p><b>注意：</b>Internet Explorer 9 及更早 IE 版本不支持 CSS 动画。</p>
+
+</body>
+</html>
