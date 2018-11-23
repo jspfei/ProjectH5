@@ -3,8 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>background</title>
+    <style>
+        #myDIV{
+            width:300px;
+            height:200px;
+            background: red  url("../img/img_the_scream.jpg") no-repeat top left/5px 5px;
+            background-position: top left;
+            -webkit-animation: mymove 5s infinite;
+            -o-animation: mymove 5s infinite;
+            animation: mymove 5s infinite;
+        }
+        @keyframes mymove {
+            /*50% {background: blue bottom right/50px 50px;}*/
+            /*50% {background-position: center;}*/
+            50% {background-size: 125px 125px;}
+        }
+        @-webkit-keyframes mymove {
+            /*50% {background: blue bottom right/50px 50px;}*/
+            /*50% {background-position: center;}*/
+            50% {background-size: 125px 125px;}
+        }
+    </style>
 </head>
 <body>
+<p>逐步改变背景属性:<p>
+<div id="myDIV"></div>
 
+<p>background 属性是所有背景属性的简写属性。</p>
+<p>CSS 中仅有 background-color, background-position, 和 background-size 属性支持动画效果。</p>
+<p><b>注意：</b>Internet Explorer 9 及更早 IE 版本不支持 CSS 动画。</p>
 </body>
 </html>

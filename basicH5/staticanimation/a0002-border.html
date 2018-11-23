@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>border</title>
+    <style>
+        #myDIV{
+            width:300px;
+            height: 200px;
+            border:1px solid black;
+            -webkit-animation: mymove 5s infinite;
+            -o-animation: mymove 5s infinite;
+            animation: mymove 5s infinite;
+        }
+
+        @keyframes mymove {
+            /*50% {border: 15px solid lightblue}*/
+            /*50% {border-bottom: 15px solid lightblue;}*/
+            /*50% {border-bottom-color: lightblue;}*/
+            /*50% {border-bottom-left-radius: 50px;}*/
+            /*50% {border-bottom-right-radius: 50px;}*/
+            /*50% {border-bottom-width: 50px;}*/
+            50% {border-color: lightblue;}
+        }
+        @-webkit-keyframes mymove {
+            /*50% {border: 15px solid lightblue}*/
+            /*50% {border-bottom: 15px solid lightblue;}*/
+            /*50% {border-bottom-color: lightblue;}*/
+            /*50% {border-bottom-left-radius: 50px;}*/
+            /*50% {border-bottom-right-radius: 50px;}*/
+            /*50% {border-bottom-width: 50px;}*/
+            50% {border-color: lightblue;}
+        }
+    </style>
+</head>
+<body>
+
+<p>逐步改变 border 属性:<p>
+<div id="myDIV"></div>
+
+<p>border 属性是所有边框属性的简写。</p>
+<p>可以通过单独的边框属性来查看动画效果。</p>
+<p><b>注意：</b>Internet Explorer 9 及更早 IE 版本不支持 CSS 动画。</p>
+</body>
+</html>

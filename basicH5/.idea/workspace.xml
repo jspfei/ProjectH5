@@ -2,28 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bc19ec3-199d-4ab5-a538-ab89e44be2d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/staticcss/c0036.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0037.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0038.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0039.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0040.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0041.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0042.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0043.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0044.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0045.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0046.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0047.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0048.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0049.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0050.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0051.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0052.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0053.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0054---框架 bootstrap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0055.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticcss/c0056.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticanimation/a0002-border.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticanimation/a0003-bottom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticanimation/a0004-box-shadow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticanimation/a0005-clip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticanimation/a0006-color.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticanimation/a0007-column-count.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticanimation/a0001-background.html" beforeDir="false" afterPath="$PROJECT_DIR$/staticanimation/a0001-background.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,7 +41,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="9" />
-          <entry key="HTML" value="20583" />
+          <entry key="HTML" value="21155" />
           <entry key="JavaScript" value="82" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
@@ -63,7 +49,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="110" />
+          <entry key="HTML" value="117" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
@@ -71,7 +57,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="110" />
+          <entry key="html" value="117" />
           <entry key="js" value="1" />
           <entry key="php" value="1" />
         </counts>
@@ -79,7 +65,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="9" />
-          <entry key="html" value="20583" />
+          <entry key="html" value="21155" />
           <entry key="js" value="82" />
           <entry key="txt" value="3" />
         </counts>
@@ -118,33 +104,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticcss/c0048.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticcss/c0049.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-126">
-              <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticcss/c0050.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticcss/c0054---框架 bootstrap.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="159">
@@ -162,50 +121,74 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticcss/c0056.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+            <state relative-caret-position="171">
+              <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticcss/c0052.html">
+        <entry file="file://$PROJECT_DIR$/staticanimation/a0001-background.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="68" column="99" selection-start-line="68" selection-start-column="94" selection-end-line="68" selection-end-column="99" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#picture#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="95">
+              <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticcss/c0053.html">
+        <entry file="file://$PROJECT_DIR$/staticanimation/a0002-border.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="31" />
+            <state relative-caret-position="247">
+              <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/statichtml/h0024.html">
+        <entry file="file://$PROJECT_DIR$/staticanimation/a0003-bottom.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="16" column="71" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="71" />
+            <state relative-caret-position="228">
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticcss/c0051.html">
+        <entry file="file://$PROJECT_DIR$/staticanimation/a0004-box-shadow.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staticanimation/a0005-clip.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staticanimation/a0006-color.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/staticanimation/a0007-column-count.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -237,13 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/staticcss/c0006.html" />
-        <option value="$PROJECT_DIR$/staticcss/c0007.html" />
-        <option value="$PROJECT_DIR$/staticcss/c0008.html" />
-        <option value="$PROJECT_DIR$/staticcss/c0009.html" />
-        <option value="$PROJECT_DIR$/staticcss/c0010.html" />
-        <option value="$PROJECT_DIR$/staticcss/c0011.html" />
-        <option value="$PROJECT_DIR$/staticcss/c0012.html" />
         <option value="$PROJECT_DIR$/staticcss/c0013.html" />
         <option value="$PROJECT_DIR$/staticcss/c0015.html" />
         <option value="$PROJECT_DIR$/staticcss/c0016.html" />
@@ -288,6 +264,13 @@
         <option value="$PROJECT_DIR$/staticcss/c0054---框架 bootstrap.html" />
         <option value="$PROJECT_DIR$/staticcss/c0055.html" />
         <option value="$PROJECT_DIR$/staticcss/c0056.html" />
+        <option value="$PROJECT_DIR$/staticanimation/a0001-background.html" />
+        <option value="$PROJECT_DIR$/staticanimation/a0002-border.html" />
+        <option value="$PROJECT_DIR$/staticanimation/a0003-bottom.html" />
+        <option value="$PROJECT_DIR$/staticanimation/a0004-box-shadow.html" />
+        <option value="$PROJECT_DIR$/staticanimation/a0004-clip.html" />
+        <option value="$PROJECT_DIR$/staticanimation/a0006-color.html" />
+        <option value="$PROJECT_DIR$/staticanimation/a0007-column-count.html" />
       </list>
     </option>
   </component>
@@ -297,9 +280,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="563" />
-    <option name="y" value="389" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="616" />
+    <option name="y" value="218" />
     <option name="width" value="1386" />
     <option name="height" value="554" />
   </component>
@@ -346,7 +329,7 @@
             <path>
               <item name="basicH5" type="b2602c69:ProjectViewProjectNode" />
               <item name="basicH5" type="462c0819:PsiDirectoryNode" />
-              <item name="staticcss" type="462c0819:PsiDirectoryNode" />
+              <item name="staticanimation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -362,6 +345,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\h5\ProjectH5\basicH5\staticanimation" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -411,7 +399,7 @@
       <workItem from="1542335340396" duration="17871000" />
       <workItem from="1542591979522" duration="25080000" />
       <workItem from="1542677926738" duration="9136000" />
-      <workItem from="1542936845933" duration="17163000" />
+      <workItem from="1542936845933" duration="20522000" />
     </task>
     <task id="LOCAL-00001" summary="sss">
       <created>1542008258200</created>
@@ -424,10 +412,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91328000" />
+    <option name="totallyTimeSpent" value="94687000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="563" y="389" width="1386" height="554" extended-state="0" />
+    <frame x="616" y="218" width="1386" height="554" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24925816" />
@@ -463,55 +451,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="sss" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/staticcss/c0006.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticcss/c0007.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticcss/c0012.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticcss/c0029.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticcss/c0030.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticcss/c0034.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="104" selection-start-line="11" selection-start-column="104" selection-end-line="11" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticcss/c0035.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="57" column="33" lean-forward="true" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticcss/c0036.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -830,8 +769,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticcss/c0056.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        <state relative-caret-position="171">
+          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticanimation/a0001-background.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticanimation/a0002-border.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticanimation/a0003-bottom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticanimation/a0004-box-shadow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticanimation/a0005-clip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticanimation/a0006-color.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticanimation/a0007-column-count.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
         </state>
       </provider>
     </entry>
