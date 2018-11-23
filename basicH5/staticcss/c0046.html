@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分页</title>
+    <style>
+        ul.pagination{
+            display:inline-block;
+            padding:0;
+            margin:0;
+        }
+        ul.pagination li {display: inline;}
+        ul.pagination li a {
+            color:black;
+            float:left;
+            padding:8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+            margin:0 4px;
+        }
+        .pagination li:first-child a{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .pagination li:last-child a{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        ul.pagination li a.active{
+            background-color: #4CAF50;
+            color:white;
+        }
+        ul.pagination li a:hover:not(.active){background-color: #dddddd}
+        div.center{
+            text-align: center;
+        }
+
+        ul.breadcrumb{
+            padding:8px 16px;
+            list-style: none;
+            background-color: #eeeeee;
+        }
+        ul.breadcrumb li {display:inline;}
+        ul.breadcrumb li+li:before{
+            padding:8px;
+            color:black;
+            content:"/\00a0";
+        }
+        ul.breadcrumb li a {color:green;}
+    </style>
+</head>
+<body>
+<h2>简单的分页</h2>
+<div class="center">
+    <ul class="pagination">
+        <li><a href="#">«</a></li>
+        <li><a href="#">1</a></li>
+        <li><a class="active" href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">»</a></li>
+    </ul>
+</div>
+
+<div>
+    <h2>面包屑导航</h2>
+    <ul class="breadcrumb">
+        <li><a href="#">前页 </a> </li>
+        <li><a href="#">前端 </a> </li>
+        <li><a href="#">HTML 教程 </a> </li>
+        <li>HTML 段落</li>
+    </ul>
+</div>
+</body>
+</html>

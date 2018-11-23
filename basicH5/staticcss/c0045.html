@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>按钮动画</title>
+    <style>
+        .button{
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #f4511e;
+            border:none;
+            color:#ffffff;
+            text-align:center;
+            font-size: 28px;
+            padding:20px;
+            width:200px;
+            transition: all 0.5s;
+            cursor:pointer;
+            margin:5px;
+        }
+        .button span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .button span:after{
+            content:'>>';
+            position: absolute;
+            opacity: 0;
+            top:0;
+            right: -30px;
+            transition: 0.5s;
+        }
+        .button:hover span {
+            padding-right: 25px;
+        }
+        .button:hover span:after{
+            opacity: 1;
+            right: 0;
+        }
+
+        .button1{
+            display: inline-block;
+            padding:15px 25px;
+            font-size: 24px;
+            cursor:pointer;
+            text-align: center;
+            text-decoration: none;
+            outline:none;
+            color:#fff;
+            background-color: #4CAF50;
+            border:none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+        .button1:hover{background-color: #3e8e41}
+        .button1:active{
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666666;
+            -webkit-transform: translateY(4px);
+            -moz-transform: translateY(4px);
+            -ms-transform: translateY(4px);
+            -o-transform: translateY(4px);
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+<body>
+<div>
+  <div>
+      <h2>按钮动画</h2>
+      <button class="button" style="vertical-align: middle"><span>Hover </span></button>
+
+  </div>
+  <div>
+      <h2>按钮动画 - "按压效果"</h2>
+      ​
+      <button class="button1">Click Me</button>
+  </div>
+
+
+    ​
+</div>
+</body>
+</html>

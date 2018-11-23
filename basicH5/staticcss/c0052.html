@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景图片</title>
+    <style>
+        .div1{
+            width:100%;
+            height: 400px;
+            background-image: url("http://www.runoob.com/wp-content/uploads/2015/06/img_flowers.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;/**不会破坏比例*/
+            border:1px solid red;
+        }
+        .div2{
+            width:100%;
+            height: 400px;
+            background-image: url("http://www.runoob.com/wp-content/uploads/2015/06/img_flowers.jpg");
+            background-size: 100% 100%;
+            border:1px solid red;
+        }
+        .div3{
+            width:100%;
+            height: 400px;
+            background-image: url("http://www.runoob.com/wp-content/uploads/2015/06/img_flowers.jpg");
+            background-size: cover;
+            border:1px solid red;
+        }
+        /* For width smaller than 400px: */
+        .div4{
+            width:100%;
+            height: 400px;
+            background-repeat: no-repeat;
+            background-image: url("http://www.runoob.com/wp-content/uploads/2015/06/img_flowers.jpg");
+            background-size: contain;/**不会破坏比例*/
+        }
+        /* For width 400px and larger: */
+        @media only screen and (min-width: 400px) {
+            .div4{
+                width:100%;
+                height: 400px;
+                background-repeat: no-repeat;
+                background-image: url("http://www.runoob.com/wp-content/uploads/2015/06/img_smallflower.jpg");
+                background-size: contain;/**不会破坏比例*/
+            }
+        }
+    </style>
+</head>
+<body>
+  <div>
+      <h2>如果 background-size 属性设置为 "contain", 背景图片将按比例自适应内容区域。图片保持其比例不变：</h2>
+      <div class="div1"></div>
+  </div>
+<div>
+    <h2>如果 background-size 属性设置为 "100% 100%" ，背景图片将延展覆盖整个区域：</h2>
+    <div class="div2"></div>
+</div>
+<div>
+    <h2> 如果 background-size 属性设置为 "cover"，则会把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。注意该属性保持了图片的比例因此 背景图像的某些部分无法显示在背景定位区域中。</h2>
+    <div class="div3"></div>
+</div>
+<div>
+    <h2>不同设备显示不同图片</h2>
+    <div class="div4"></div>
+</div>
+<div>
+    <h2>picture</h2>
+    <picture>
+        <source srcset="http://www.runoob.com/wp-content/uploads/2015/06/img_smallflower.jpg" media="(max-width: 400px)">
+        <source srcset="http://www.runoob.com/wp-content/uploads/2015/06/img_flowers.jpg">
+        <img src="http://www.runoob.com/wp-content/uploads/2015/06/img_flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+</div>
+</body>
+</html>
