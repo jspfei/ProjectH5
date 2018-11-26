@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>max-height</title>
+    <style>
+        #myDIV{
+            width:500px;
+            background-color: lightblue;
+            overflow:auto;
+            border:1px solid black;
+            -webkit-animation: mymove 5s infinite;
+            -o-animation: mymove 5s infinite;
+            animation: mymove 5s infinite;
+        }
+        @-webkit-keyframes mymove {
+            50%{max-height: 100px;}
+            50%{max-width:  100px;}
+        }
+        @keyframes mymove {
+            50%{max-height: 100px;}
+            50%{max-width:  100px;}
+        }
+
+    </style>
+</head>
+<body>
+​
+<p>逐步改变 max-height, 从 "none" 到 "100px":<p>
+<div id="myDIV">
+<p>This DIV element does not have a pre-defined width.</p>
+<p>Try resizing the browser window to see that width of this DIV element will grow/shrink along width the resizing, but it will never exceed 600 pixels in width.</p>
+
+</div>
+
+<p>max-height 属性支持动画效果。</p>
+<p><b>注意:</b> 目前 max-height 属性在 Chrome 浏览器下不会改变 <em>gradually（灰阶）</em>, 在 Firefox 都无法起作用。</p>
+<p><b>注意：</b>Internet Explorer 9 及更早 IE 版本不支持 CSS 动画。</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>width</title>
+    <style>
+        #myDIV{
+            width:120px;
+            background-color: coral;
+            color:white;
+            -webkit-animation: mymove 5s infinite;
+            -o-animation: mymove 5s infinite;
+            animation: mymove 5s infinite;
+        }
+        @keyframes mymove {
+            50% {width:500px;}
+        }
+        @-webkit-keyframes mymove {
+            50% {width:500px;}
+        }
+    </style>
+</head>
+<body>
+<p>逐步改变 DIV 元素的宽度，从 120px 到 500px:<p>
+<div id="myDIV">
+    <h1>My DIV</h1>
+</div>
+</body>
+</html>

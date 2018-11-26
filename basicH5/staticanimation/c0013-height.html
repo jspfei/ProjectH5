@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>font</title>
+    <style>
+        #myDIV{
+            border:1px solid black;
+            width:400px;
+            height: 100px;
+            background-color: coral;
+            -webkit-animation: mymove 5s infinite;
+            -o-animation: mymove 5s infinite;
+            animation: mymove 5s infinite;
+        }
+        @-webkit-keyframes mymove {
+            /*50%{*/
+                /*font-size:  40px ;}*/
+            50% {
+                height: 500px;}
+        }
+        @keyframes mymove {
+            /*50%{*/
+                /*font-size:  40px ;}*/
+            50% {
+                height: 500px;}
+        }
+    </style>
+</head>
+<body>
+​
+<p>height 属性支持动画效果。</p>
+<p><b>注意：</b>Internet Explorer 9 及更早 IE 版本不支持 CSS 动画。</p>
+​
+<p>逐步改变 DIV 元素的高度，从 100px 到 500px:<p>
+<div id="myDIV">
+    <h1>My DIV</h1>
+</div>
+​
+</body>
+</html>

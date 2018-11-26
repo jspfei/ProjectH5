@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>margin</title>
+    <style>
+        #myDIV{
+            height: 200px;
+            background-color: lightblue;
+            -webkit-animation: mymove 7s infinite;
+            -o-animation: mymove 7s infinite;
+            animation: mymove 7s infinite;
+        }
+        @-webkit-keyframes mymove {
+            /*50%{margin:50px;}*/
+            50%{margin-left:50px;}
+            50%{margin-top:50px;}
+        }
+        @keyframes mymove {
+            /*50%{margin:50px;}*/
+            50%{margin-left:50px;}
+            50%{margin-top:50px;}
+        }
+    </style>
+</head>
+<body>
+​
+<p>逐步改变 margin 属性，从 0
+    This is my DIV element.px 到 50px:<p>
+<div id="myDIV">
+</div>
+​
+<p>margin 属性支持动画效果。</p>
+<p><b>注意：</b>Internet Explorer 9 及更早 IE 版本不支持 CSS 动画。</p>
+​
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#click1").click(function(){
+                $(this).hide();
+            });
+            $("#dblclick").dblclick(function(){
+                $(this).hide();
+            });
+            $('#mouseenter').mouseenter(function () {
+              //  alert('您的鼠標移動到了 id=mouseenter 元素上');
+            });
+            $("#mouseleave").mouseleave(function () {
+              // alert("再见，您的鼠标离开了该段落。");
+            });
+            $("#mousedown").mousedown(function () {
+               alert('鼠标在该段落上按下！');
+            });
+            $("#mouseup").mouseup(function () {
+                alert("鼠标在段落上松开。");
+            });
+
+            $("#hover").hover(
+                // function () {
+                //     alert('你進入了 hover')
+                // },
+                // function () {
+                //     alert('你離開了 hover')
+                // }
+            );
+            $("input").focus(function () {
+                $(this).css("background-color","#ccfffc");
+            });
+            $("input").blur(function () {
+                $(this).css("background-color","#ffffff");
+            });
+            var validKeys = {start:65,end:90};
+            $("#keys").keydown(validKeys,function (event) {
+                var keys = event.data;
+                console.log(keys)
+                return event.which >=keys.start && event.which <keys.end;
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div>
+    <h2>$(document).ready()</h2>
+    <p>$(document).ready() 方法允许我们在文档完全加载完后执行函数</p>
+</div>
+<div>
+    <h2>click()</h2>
+    <p id="click1">click() 方法是当按钮点击事件被触发时会调用一个函数</p>
+</div>
+<div>
+    <h2>dbclick()</h2>
+    <p id="dblclick">当双击元素时，会发生 dblclick 事件。</p>
+</div>
+<div>
+    <h2>mouseenter()</h2>
+    <p id="mouseenter">当鼠标指针穿过元素时，会发生 mouseenter 事件。</p>
+</div>
+<div>
+    <h2>mouseleave()</h2>
+    <p id="mouseleave">当鼠标指针离开元素时，会发生 mouseleave 事件。</p>
+</div>
+<div>
+    <h2>mousedown()</h2>
+    <p id="mousedown">当鼠标指针移动到元素上方，并按下鼠标按键时，会发生 mousedown 事件。</p>
+</div>
+<div>
+    <h2>mouseup()</h2>
+    <p id="mouseup">当在元素上松开鼠标按钮时，会发生 mouseup 事件。</p>
+</div>
+<div>
+    <h2>hover</h2>
+    <p id="hover">hover()方法用于模拟光标悬停事件。
+        当鼠标移动到元素上时，会触发指定的第一个函数(mouseenter);当鼠标移出这个元素时，会触发指定的第二个函数(mouseleave)。</p>
+</div>
+<div>
+    <h2>focus()</h2>
+    <p>当元素获得焦点时，发生 focus 事件。 当通过鼠标点击选中元素或通过 tab 键定位到元素时，该元素就会获得焦点。 focus() 方法触发 focus 事件，或规定当发生 focus 事件时运行的函数：</p>
+    <p>Name:<input type="text" name="fullname"></p>
+    <p>Email:<input type="text" name="email"></p>
+</div>
+<div>
+    <h2>keydown</h2>
+    <p>在键盘上按下某键时发生,一直按着则会不断触发（opera浏览器除外）, 它返回的是键盘代码;</p>
+    <input type="text" id="keys" name="fullname">
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--HTML 元素选取-->
+<!--HTML 元素操作-->
+<!--CSS 操作-->
+<!--HTML 事件函数-->
+<!--JavaScript 特效和动画-->
+<!--HTML DOM 遍历和修改-->
+<!--AJAX-->
+<!--Utilities-->
+<!--$(this).hide() - 隐藏当前元素-->
+<!--$("p").hide() - 隐藏所有-->
+<!--$("p.test").hide() - 隐藏所有 class="test" 的-->
+<!--$("#test").hide() - 隐藏所有 id="test" 的元素-->
+    <head>
+        <meta charset="UTF-8">
+        <title>jquery</title>
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            // $(document).ready(function () {
+            //     $("p").click(function () {
+            //         $(this).hide();
+            //     })
+            // });
+
+            $(document).ready(function () {
+               $("button").click(function () {
+                   /**元素选择 */
+                   // $("p").hide();
+                   //id 选择
+                   // $("#test").hide();
+                   //class 选择
+                   $(".test1").hide();
+               });
+
+            });
+        </script>
+    </head>
+    <body>
+<p class="test1">如果你点我，我就消失。</p>
+<p class="test1">继续点我</p>
+<p id="test">接着点我</p>
+    <button>点我</button>
+</body>
+</html>

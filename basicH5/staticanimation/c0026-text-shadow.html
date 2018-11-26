@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>text-shadow</title>
+    <style>
+        #myDIV{
+            -webkit-animation: mymove 5s infinite;
+            -o-animation: mymove 5s infinite;
+            animation: mymove 5s infinite;
+        }
+        @keyframes mymove {
+            50%{
+                text-shadow:   10px 20px 30px blue;}
+        }
+        @-webkit-keyframes mymove {
+            50%{
+                text-shadow:   10px 20px 30px blue;}
+        }
+    </style>
+</head>
+<body>
+<p>逐步改变 text-shadow 属性:<p>
+    <div id="myDIV">
+        <h1>这是一个标题</h1>
+<p>这是一个段落</p>
+</div>
+</body>
+</html>

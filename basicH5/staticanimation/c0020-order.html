@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>order</title>
+    <style>
+        #main{
+            width:400px;
+            height: 150px;
+            border:1px solid #000000;
+            display:flex;
+        }
+        #main div{
+            width:70px;
+            height: 70px;
+        }
+
+        #myGreenDIV{
+            -webkit-animation: mymove 5s infinite;
+            -o-animation: mymove 5s infinite;
+            animation: mymove 5s infinite;
+        }
+        @-webkit-keyframes mymove {
+            50%{order:6;}
+        }
+        @keyframes mymove {
+            50%{order:6;}
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div style="background-color: lightgreen;order:1;" id="myGreenDIV"></div>
+    <div style="background-color: coral;order: 2;"></div>
+    <div style="background-color: lightblue;order:3;"></div>
+    <div style="background-color: pink;order:4;"></div>
+</div>
+</body>
+</html>

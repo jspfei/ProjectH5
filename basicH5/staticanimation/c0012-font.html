@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>font</title>
+    <style>
+        #myDIV{
+            border:1px solid black;
+            width:400px;
+            height: 100px;
+            -webkit-animation: mymove 5s infinite;
+            -o-animation: mymove 5s infinite;
+            animation: mymove 5s infinite;
+        }
+        @-webkit-keyframes mymove {
+            /*50%{*/
+                /*font-size:  40px ;}*/
+            50% {font-weight: bold;}
+        }
+        @keyframes mymove {
+            /*50%{*/
+                /*font-size:  40px ;}*/
+            50% {font-weight: bold;}
+        }
+    </style>
+</head>
+<body>
+<p>逐步改变 font 属性：</p>
+<div id="myDIV">
+    <p>这是一个段落</p>
+</div>
+<p> font 属性是所有字体属性的简写</p>
+<p>font-size,font-weight,font-stretch,和 line-height 属性支持动画效果</p>
+</body>
+</html>

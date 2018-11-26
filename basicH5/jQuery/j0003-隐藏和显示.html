@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>隐藏和显示</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function () {
+             $("#hide").click(function () {
+                 $('#title').hide(1000,'linear',function () {
+                     alert("Hide() 方法已完成");
+                 });
+             });
+             $('#show').click(function () {
+                 $('#title').show(1000);
+             });
+             $('#hs').click(function () {
+                 $('#toggle').toggle();
+             });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <h2>hide() 和 show()</h2>
+    <p id="title">如果你點擊隐藏按钮，我将消失</p>
+    <button id="hide">隐藏</button>
+    <button id="show">显示</button>
+</div>
+<div>
+    <h2> toggle()</h2>
+    <p id="toggle">使用 toggle() 方法来切换 hide() 和 show() 方法</p>
+    <button id="hs">显示/隐藏</button>
+</div>
+</body>
+</html>

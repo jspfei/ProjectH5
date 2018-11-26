@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>outline</title>
+    <style>
+        #myDIV{
+            width:300px;
+            height: 200px;
+            outline:1px solid black;
+            -webkit-animation: mymove 5s infinite;
+            -o-animation: mymove 5s infinite;
+            animation: mymove 5s infinite;
+        }
+        @keyframes mymove {
+            50%{outline:15px solid lightblue;}
+        }
+        @-webkit-keyframes mymove {
+            50%{outline:15px solid lightblue;}
+        }
+    </style>
+</head>
+<body>
+
+<p>逐步改变 outline 属性:<p>
+<div id="myDIV"></div>
+<p>outline 属性是所有轮廓样式的简写。</p>
+<p>可以通过单独的轮廓属性来查看动画效果。 </p>
+<p><b>注意：</b>Internet Explorer 9 及更早 IE 版本不支持 CSS 动画。</p>
+
+</body>
+</html>

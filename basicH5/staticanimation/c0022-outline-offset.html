@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>outline-offset</title>
+    <style>
+        #myDIV{
+            margin:auto;
+            border:1px solid black;
+            outline:coral solid 5px;
+            width:300px;
+            height:100px;
+            -webkit-animation: mymove 5s infinite;
+            -o-animation: mymove 5s infinite;
+            animation: mymove 5s infinite;
+        }
+        @-webkit-keyframes mymove {
+            /*50%{outline-offset: 50px;}*/
+            50% {outline-width: 50px;}
+        }
+        @keyframes mymove {
+            /*50%{outline-offset: 50px;}*/
+            50% {outline-width: 50px;}
+        }
+    </style>
+</head>
+<body>
+​
+<p>逐步改变 outline-color 属性，从 0 到 50px：<p>
+<div id="myDIV"></div>
+​
+<p>outline-offset 属性支持动画效果。</p>
+<p><b>注意：</b>Internet Explorer 9 及更早 IE 版本不支持 CSS 动画。</p>
+​
+</body>
+</body>
+</html>
