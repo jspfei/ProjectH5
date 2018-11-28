@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加元素</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#text").append(" <b>追加文本</b>");
+            });
+            $("#btn2").click(function () {
+                $("#ol").append("<li>列表追加项</li>");
+            });
+            $("#btn3").click(function () {
+                $("#text").prepend(" <b>追加文本</b>");
+            });
+            $("#btn4").click(function () {
+                $("#ol").prepend("<li>列表追加项</li>");
+            });
+            $("#btn5").click(function () {
+                $("img").before("<b>之前</b>");
+            });
+            $("#btn6").click(function () {
+                $("img").after("<b>之后</b>");
+            });
+        });
+        function appendText() {
+            let txt1 = "<p>文本.</p>";//使用 html 标签创建文本
+            let txt2 = $("<p></p>").text("文本。");//使用 jQuery 创建文本
+            let txt3 = document.createElement("p");//使用 DOM 创建元素
+            txt3.innerHTML="文本.";
+            $("#text").append(txt1,txt2,txt3);
+        }
+        function appendText1() {
+            let txt1 = "<b>I </b>";
+            let txt2 = $("<i></i>").text("love ");
+            let txt3 = document.createElement("big");
+            txt3.innerHTML="jQuery!";
+            $("img").after(txt1,txt2,txt3);
+        }
+    </script>
+</head>
+<body>
+<p id="text">这是一个段落</p>
+<ol id="ol">
+    <li>list item  1</li>
+    <li>list item  2</li>
+</ol>
+<img src="../img/img_the_scream.jpg">
+<div>
+    <h2>append() 方法</h2>
+    <p>在被选元素的结尾插入内容（仍然该元素的内部）</p>
+    <button id="btn1">添加文本</button>
+    <button id="btn2">添加列表项</button>
+</div>
+<div>
+    <h2>prepend() 方法</h2>
+    <p>在被选元素的开头插入内容</p>
+    <button id="btn3">添加文本</button>
+    <button id="btn4">添加列表项</button>
+</div>
+<div>
+    <h2>append() 和 prepend() 方法添加若干新元素</h2>
+    <button onclick="appendText()">追加文本</button>
+</div>
+<div>
+    <h2>after() 和 before() 方法</h2>
+    <button id="btn5">之前插入</button>
+    <button id="btn6">之后插入</button>
+</div>
+<div>
+    <h2>after() 和 before() 方法添加若干新元素</h2>
+    <button onclick="appendText1()">之后插入</button>
+</div>
+</body>
+</html>

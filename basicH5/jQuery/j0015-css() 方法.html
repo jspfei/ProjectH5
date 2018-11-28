@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css() 方法</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#test").html($("p").css("background-color"));
+            });
+            $("#btn2").click(function () {
+                $("p").css("background-color","yellow");
+            });
+            $("#btn3").click(function () {
+                $("p").css({"background-color":"yellow","font-size":"200%"});
+            });
+        });
+    </script>
+</head>
+<body>
+<h2 id="test">这是一个标题</h2>
+<p style="background-color:#ff0000">这是一个段落。</p>
+<p style="background-color:#00ff00">这是一个段落。</p>
+<p style="background-color:#0000ff">这是一个段落。</p>
+<div>
+    <h2>返回 CSS 属性</h2>
+    <button id="btn1">返回第一个 p 元素的 background-color</button>
+</div>
+<div>
+    <h2>设置 CSS 属性</h2>
+    <button id="btn2">设置 p 元素的 background-color </button>
+</div>
+<div>
+    <h2>设置多个 CSS 属性</h2>
+    <button id="btn3">为 p 元素设置多个样式</button>
+</div>
+</body>
+</html>

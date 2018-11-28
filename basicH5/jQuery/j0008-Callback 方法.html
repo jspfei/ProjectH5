@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Callback 方法</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function () {
+           $("button").click(function () {
+               $("p").hide("slow",function () {
+                  alert("段落现在被隐藏！")
+               });
+           }) ;
+        });
+    </script>
+</head>
+<body>
+<button>隐藏</button>
+<p>我们段落内容</p>
+</body>
+</html>
