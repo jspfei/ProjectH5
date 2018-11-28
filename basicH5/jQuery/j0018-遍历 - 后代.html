@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后代</title>
+    <style>
+        .descendants *{
+            display:block;
+            border:2px solid lightgrey;
+            color:lightgrey;
+            padding:5px;
+            margin:15px;
+        }
+    </style>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#div1").children().css({"color":"red","border":"2px solid red"});
+            $("#div2").find("span").css({"color":"red","border":"2px solid red"});
+        });
+    </script>
+</head>
+<body>
+<div>
+    <h2>children() 方法</h2>
+    <p>返回被选元素的所有直接子元素</p>
+    <p>该方法只会向下一级对 DOM 树进行遍历</p>
+    <div id="div1" class="descendants" style="width:500px;">
+        div (当前元素)
+        <p>p (儿子元素)
+            <span>span (孙子元素)</span>
+        </p>
+        <p>p (儿子元素)
+            <span>span (孙子元素)</span>
+        </p>
+
+    </div>
+</div>
+<div>
+    <h2>find() 方法</h2>
+    <p>返回被选元素的后代元素，一路向下直到最后一个后代</p>
+    <div id="div2" class="descendants" style="width:500px;">
+        div (当前元素)
+        <p>p (儿子元素)
+            <span>span (孙子元素)</span>
+        </p>
+        <p>p (儿子元素)
+            <span>span (孙子元素)</span>
+        </p>
+
+    </div>
+</div>
+</body>
+</html>

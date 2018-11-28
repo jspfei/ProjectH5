@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遍历 - 同胞(siblings)</title>
+    <style>
+        .siblings *
+        {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#h2").siblings().css({"color":"red","border":"2px solid red"});
+            // $("h2").siblings("p");
+            $("#next").next().css({"color":"red","border":"2px solid red"});
+            $("#nextAll").nextAll().css({"color":"red","border":"2px solid red"});
+            $("#nextUntil").nextUntil("h6").css({"color":"red","border":"2px solid red"});
+        });
+    </script>
+</head>
+<body>
+<div>
+    <h2>siblings() 方法</h2>
+    <p>被选元素的所有同胞元素</p>
+    <div id="div1" class="siblings">
+        <p>p</p>
+        <span>span</span>
+        <h2 id="h2">h2</h2>
+        <h3>h3</h3>
+        <p>p</p>
+    </div>
+</div>
+
+<div>
+    <h2>next() 方法</h2>
+    <p>返回被选元素的下一个同胞元素</p>
+    <div id="div2" class="siblings">
+        <p>p</p>
+        <span>span</span>
+        <h2 id="next">h2</h2>
+        <h3>h3</h3>
+        <p>p</p>
+    </div>
+</div>
+<div>
+    <h2>nextAll() 方法</h2>
+    <p>返回被选元素的所有跟随的同胞元素</p>
+    <div id="div3" class="siblings">
+        <p>p</p>
+        <span>span</span>
+        <h2 id="nextAll">h2</h2>
+        <h3>h3</h3>
+        <p>p</p>
+    </div>
+</div>
+<div>
+    <h2>nextUntil() 方法</h2>
+    <p>返回介于两个给定参数之间的所有跟随的同胞元素</p>
+    <div id="div4" class="siblings">
+        <p>p</p>
+        <span>span</span>
+        <h2 id="nextUntil">h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+        <p>p</p>
+    </div>
+</div>
+</body>
+</html>
